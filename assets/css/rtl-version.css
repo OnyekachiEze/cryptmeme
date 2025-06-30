@@ -1,0 +1,102 @@
+/* ==== 
+ --------- rtl version styles start ---------
+ ==== */
+.rtl {
+  direction: rtl;
+}
+.rtl .color-palate-inner {
+  direction: ltr !important;
+}
+.rtl .title-animation {
+  direction: ltr;
+  text-align: end;
+}
+.rtl .swiper {
+  direction: ltr !important;
+}
+.rtl .swiper-rtl {
+  direction: rtl !important;
+}
+.rtl .slider-navigation {
+  direction: ltr;
+}
+.rtl .progress-wrap {
+  direction: ltr;
+}
+.rtl .feature .title-animation,
+.rtl .work-two .title-animation,
+.rtl .story .title-animation,
+.rtl .market .title-animation,
+.rtl .countdown-main .title-animation,
+.rtl .allocation .title-animation,
+.rtl .invest .title-animation {
+  text-align: end !important;
+}
+.rtl .invest__thumnb-wrapper {
+  direction: ltr !important;
+}
+.rtl .download .download__thumb {
+  direction: ltr;
+}
+.rtl .exchange__single .title-animation {
+  text-align: center;
+}
+.rtl .progress-count-wrapper {
+  direction: ltr;
+}
+.rtl .breadcrumb {
+  direction: ltr;
+  justify-content: flex-end;
+}
+.rtl .section__header .title-animation {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .rtl .text-lg-start {
+    text-align: start !important;
+  }
+}
+.rtl .testimonial__content .title-animation {
+  text-align: start;
+}
+@media (min-width: 1200px) {
+  .rtl .offset-xl-1 {
+    margin-left: unset;
+    margin-inline-start: 8.33333333%;
+  }
+  .rtl .offset-xl-6 {
+    margin-left: unset;
+    margin-inline-start: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .rtl .offset-xxl-1 {
+    margin-left: unset;
+    margin-inline-start: 8.33333333%;
+  }
+}
+.rtl .text-start {
+  text-align: start !important;
+}
+@media (min-width: 1200px) {
+  .rtl .text-xl-end {
+    text-align: end !important;
+  }
+}
+@media (min-width: 1200px) {
+  .rtl .text-xl-start {
+    text-align: start !important;
+  }
+}
+.rtl .accordion-button::after {
+  margin-left: unset !important;
+  margin-inline-start: auto;
+}
+.rtl .error .title-animation,
+.rtl .text-center .title-animation {
+  text-align: center;
+}
+
+/* ==== 
+ --------- rtl version styles end ---------
+ ==== */

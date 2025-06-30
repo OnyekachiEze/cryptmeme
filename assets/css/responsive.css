@@ -1,0 +1,567 @@
+@media only screen and (min-width: 425px) {
+  .conversation .conversation__single {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .mt-top-fix {
+    margin-top: 194px;
+  }
+  .pagination button,
+  .pagination a {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+  }
+  .terms .terms__tab {
+    padding: 60px 40px;
+  }
+  .terms .terms__tab button {
+    font-size: 18px;
+  }
+  .authentication .authentication__inner {
+    padding: 60px 40px;
+  }
+  .authentication .btn--primary {
+    font-size: 18px;
+  }
+  .btn-wrapper .btn--primary {
+    padding: 23px 60px;
+  }
+  .btn-wrapper .btn--secondary {
+    padding: 19px 60px;
+  }
+  .pricing .pricing__single {
+    padding: 80px 40px;
+  }
+  .token-two .token-two__inner {
+    padding-inline: 40px;
+  }
+  .profit form {
+    padding: 60px;
+  }
+  .testimonial .testimonial__inner {
+    padding-inline: 80px;
+  }
+  .testimonial .testimonial__single {
+    padding: 60px 40px;
+  }
+  .testimonial .thumb {
+    top: 30px;
+    right: 30px;
+  }
+  .advisor-two .thumb {
+    width: 280px;
+    height: 280px;
+  }
+  .explore .explore__content {
+    padding: 60px;
+  }
+  .details__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blog__sidebar-widget .single-post {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .reply__comment-inner {
+    flex-direction: row;
+  }
+  .reply__comment-inner .input-single {
+    margin-bottom: 0px !important;
+  }
+  .comment__single {
+    padding: 24px;
+  }
+  .comment__meta {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .comment__meta .time {
+    text-align: end;
+  }
+  .author__info {
+    align-items: center;
+    flex-direction: row;
+  }
+  .offer .offer__content-single {
+    padding: 20px 30px;
+  }
+  .hero-two {
+    margin-top: 194px;
+  }
+  .work-two .work-two__single {
+    padding: 40px;
+  }
+  .exchange-two .exchange-two__content {
+    padding: 60px 40px;
+  }
+  .marquee {
+    inset-block-start: 124px;
+  }
+  .newsletter-form form {
+    flex-wrap: nowrap;
+  }
+  .countdown-main .countdown__inner {
+    padding: 80px 60px;
+  }
+  .countdown-main .time-countdown {
+    gap: 24px;
+  }
+  .countdown-main .time-countdown span {
+    display: block;
+  }
+  .invest .invest__list ul li {
+    width: calc(50% - 12px);
+  }
+  .download .download__item-single {
+    width: calc(50% - 12px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .title-xl {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner .banner-icons {
+    position: absolute;
+    z-index: -1;
+    top: 28px;
+    inset-inline-start: 20%;
+  }
+  .banner .banner-icons img {
+    max-width: 6vw;
+    min-width: 60px;
+    animation: rotation 4s linear infinite;
+    animation-delay: 0.5s;
+  }
+  .banner .left-bottom-img {
+    top: unset;
+    bottom: 12px;
+    inset-inline-start: 63px;
+  }
+  .banner .left-bottom-img img {
+    animation: pulseSm 3s linear infinite;
+    animation-delay: 2s;
+  }
+  .banner .right-top-img {
+    inset-inline-start: unset;
+    inset-inline-end: 270px;
+    top: 68px;
+  }
+  .banner .right-top-img img {
+    animation: rotation 4s linear infinite;
+  }
+  .banner .right-bottom-img {
+    inset-inline-start: unset;
+    inset-inline-end: 170px;
+    top: unset;
+    bottom: 170px;
+  }
+  .banner .right-bottom-img img {
+    animation: moveLeftRight 4s linear infinite;
+  }
+  .token-two .token-two__inner {
+    padding-inline: 100px;
+  }
+  .feature .feature__method-single {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+  }
+  .feature .feature__method-single img {
+    width: auto;
+    height: auto;
+  }
+  .way .way__inner {
+    padding-inline: 40px;
+  }
+  .contact-three__form .input-group .input-single {
+    width: calc(50% - 15px);
+  }
+  .contact-three__form .input-single textarea {
+    min-height: 390px;
+  }
+  .review-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .review-wrapper .review-left,
+  .review-wrapper .review-right {
+    width: auto;
+  }
+  .details__content {
+    padding-inline: 20px;
+  }
+  .blog__sidebar-widget {
+    padding: 40px 24px;
+  }
+  .blog__details-card-sm {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  p,
+  th,
+  td,
+  li,
+  input,
+  textarea,
+  select,
+  label,
+  blockquote,
+  span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-xxl {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .text-xl {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text-lg {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .title-xl {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .pt-120 {
+    padding-block-start: 120px;
+  }
+  .pt-100 {
+    padding-block-start: 100px;
+  }
+  .pb-120 {
+    padding-block-end: 120px;
+  }
+  .pb-190 {
+    padding-bottom: 265px;
+  }
+  .pb-100 {
+    padding-block-end: 100px;
+  }
+  .mt-120 {
+    margin-block-start: 120px;
+  }
+  .mt-100 {
+    margin-block-start: 100px;
+  }
+  .mt-60 {
+    margin-block-start: 60px;
+  }
+  .mt-55 {
+    margin-block-start: 55px;
+  }
+  .mb-120 {
+    margin-block-end: 120px;
+  }
+  .mb-100 {
+    margin-block-end: 100px;
+  }
+  .mb-60 {
+    margin-block-end: 60px;
+  }
+  .mb-55 {
+    margin-block-end: 55px;
+  }
+  .progress-wrap {
+    right: 30px;
+    bottom: 30px;
+  }
+  .header-secondary {
+    inset-block-start: 106px;
+  }
+  .hero-two {
+    margin-top: 300px;
+  }
+  .hero-two .hero-two-tab-wrapper {
+    max-width: 410px;
+    margin-inline-start: auto;
+  }
+  .marquee--tertiary {
+    inset-block-start: 230px;
+  }
+  .marquee-currency .marquee-currency__single {
+    padding-inline: 45px;
+  }
+  .counter-two h2 {
+    font-size: 110px;
+    -webkit-text-stroke-width: 5px;
+  }
+  .counter .counter__single {
+    justify-content: center;
+  }
+  .counter .odometer-digit {
+    width: 30px;
+  }
+  .work .work__content {
+    margin-top: 0px;
+    text-align: start;
+  }
+  .work .work__content p {
+    margin-inline: unset;
+  }
+  .tokenomics .tokenomics__wrapper {
+    justify-content: space-between;
+  }
+  .tokenomics .tokenomics__single-alt {
+    flex-direction: column;
+  }
+  .tokenomics .tokenomics__single-alt .date::before {
+    bottom: unset;
+    top: 60px;
+  }
+  .contact-three .contact-three__inner {
+    padding-inline: 80px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  h2 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .title-xl {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  h3 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h4 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .title-md {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .title-sm {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .page-three h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .page-three h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .page-two h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .neutral-top {
+    margin-block-start: -12px;
+  }
+  .topbar {
+    padding-block: 8px;
+  }
+  .header .navbar__item a {
+    padding-inline: 16px;
+    font-size: 14px;
+  }
+  .header .navbar__sub-menu a {
+    padding-inline: 32px !important;
+  }
+  .header-secondary {
+    inset-block-start: 52px;
+  }
+  .hero {
+    padding-block: 390px 280px;
+  }
+  .hero .left-top-img {
+    top: 22%;
+  }
+  .hero .left-top-img img {
+    max-width: 20vw;
+  }
+  .terms .terms__content {
+    padding-inline-start: 60px;
+  }
+  .exchange-three table {
+    width: 100%;
+    min-width: auto;
+  }
+  .explore {
+    padding-block: 200px;
+  }
+  .explore .explore__content {
+    transform: rotate(-13.735deg);
+  }
+  .explore .left-top-img {
+    transform: rotate(13.735deg);
+  }
+  .explore .right-bottom-img {
+    transform: rotate(13.735deg);
+  }
+  .advisor-two h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .pricing .l-tr {
+    transform: rotate(-2.523deg);
+  }
+  .pricing .r-tl {
+    transform: rotate(2.331deg);
+  }
+  .hero-two {
+    margin-top: 246px;
+  }
+  .way .content {
+    text-align: start;
+    margin-inline: unset;
+  }
+  .way .content h4 {
+    margin-inline: unset;
+  }
+  .marquee--tertiary {
+    inset-block-start: 176px;
+  }
+  .contact-three .contact-three__inner {
+    padding-inline: 160px;
+  }
+  .footer-three .footer__widget-alter {
+    padding-inline-start: 60px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .page-two h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .header .navbar__item a {
+    padding-inline: 25px;
+    font-size: 16px;
+  }
+  .header .navbar__sub-menu a {
+    font-size: 15px;
+    padding-inline: 32px !important;
+  }
+  .header .navbar__sub-menu a:hover {
+    padding-inline-start: 40px !important;
+  }
+  .header .navbar__sub-menu .active > a {
+    padding-inline-start: 40px !important;
+  }
+  .story .story__content {
+    padding-inline-start: 60px;
+  }
+  .faq .faq__accordion {
+    padding-inline-start: 60px;
+  }
+  .distribution .distribution__inner {
+    flex-direction: row;
+    text-align: start;
+    justify-content: flex-start;
+    padding: 60px 40px;
+  }
+  .distribution .chart-wrapper {
+    max-width: 250px;
+    inset-inline-start: -30px;
+  }
+  .distribution .chart-wrapper .ch {
+    left: 60%;
+  }
+  .way .way__inner {
+    padding-inline: 100px;
+  }
+  .footer-two .footer__widget-alter {
+    padding-inline-start: 60px;
+  }
+  .footer-three h2 {
+    font-size: 120px;
+    line-height: 130px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .container {
+    max-width: 1430px;
+  }
+  .tokenomics .tokenomics__single {
+    gap: 100px;
+  }
+  .tokenomics .tokenomics__single-alt {
+    gap: 150px;
+  }
+  .tokenomics .date::before {
+    height: 80px;
+  }
+  .tokenomics .tokenomics__single-l {
+    gap: 140px;
+  }
+  .tokenomics .tokenomics__inner .shape {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .slider-navigation {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1560px;
+    justify-content: space-between;
+    margin: 0px;
+  }
+}
