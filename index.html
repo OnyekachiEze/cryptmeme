@@ -36,102 +36,88 @@
   <body class="bg-gradient-to-br from-yellow-900 via-yellow-800 to-amber-900 text-white overflow-x-hidden">
 
     <!-- NAVIGATION -->
-    <nav class="fixed top-0 w-full z-50 bg-transparent py-4 px-6">
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-lg bg-black/30 py-3 px-6 shadow-md">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center space-x-3">
-          <img src="/assets/images/logo.jpeg" alt="MUSA Logo" class="w-8 h-8 rounded-full object-cover" />
-          <span class="text-xl font-bold">$MUSA</span>
+          <img src="/assets/images/logo.jpeg" alt="MUSA Logo" class="w-9 h-9 rounded-full object-cover" />
+          <span class="text-2xl font-extrabold tracking-wide">$MUSA</span>
         </div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#home" class="text-gray-300 hover:text-white relative group">
-            Home
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a href="#about" class="text-gray-300 hover:text-white relative group">
-            About
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a href="#how-to-buy" class="text-gray-300 hover:text-white relative group">
-            How To Buy
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a href="https://t.me/musaCoinerc20" target="_blank" class="bg-white/10 border border-white/20 px-6 py-2 rounded-full hover:bg-white/20 hover:border-yellow-400 text-white font-semibold transition-all duration-300">
-            Join Telegram
-          </a>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+          <a href="#about" class="hover:text-yellow-400 transition">About</a>
+          <a href="#how-to-buy" class="hover:text-yellow-400 transition">How To Buy</a>
+          <a href="https://t.me/musaCoinerc20" target="_blank" class="ml-4 px-5 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-full text-black font-semibold transition">Join Telegram</a>
         </div>
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="home" class="relative h-screen flex items-center justify-center pt-20">
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/logo1.jpg');"></div>
-      <div class="absolute bottom-6 animate-bounce z-20">
-        <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-400 w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M6 9l6 6 6-6" />
-        </svg>
+      <div class="absolute inset-0 bg-cover bg-center brightness-75" style="background-image: url('/assets/logo1.jpg');"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90"></div>
+      <div class="relative z-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-yellow-300 drop-shadow-md mb-6">$MUSA is Bananas 🍌</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-xl mx-auto mb-8">Ethereum just got peeled. No promises. No roadmaps. Just jungle-tier meme power.</p>
+        <a href="#how-to-buy" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-3 rounded-full font-bold transition-transform transform hover:scale-105">
+          Buy Now
+        </a>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 bg-white text-gray-900 relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-4xl font-bold text-yellow-900 mb-6">Apes Eat, Apes Buy, Apes Send It 🍌🦍</h2>
-            <p class="text-gray-700 mb-4">Bananas = based.<br/>Apes = hungry.<br/>So we dropped $MUSA, the ultimate meme coin on Ethereum.</p>
-            <p class="text-gray-700 mb-4">Latin name for banana? Musa. Now it’s the ticker for your next terrible financial decision that might 100x your portfolio.</p>
-            <p class="text-gray-700 mb-4">No utility. No promises. Just bananas, memes, and apes vibin’ on the chain.</p>
-            <a href="https://t.me/musaCoinerc20" target="_blank" class="inline-block bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white px-8 py-3 rounded-full font-bold transition-transform transform hover:scale-105">
-              Join Telegram
-            </a>
-          </div>
-          <div>
-            <div class="rounded-3xl overflow-hidden shadow-xl">
-              <img src="/assets/images/logo.jpeg" alt="MUSA Meme Coin" class="w-full h-full object-cover" />
-            </div>
-          </div>
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-white text-gray-900">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <img src="/assets/images/logo.jpeg" alt="$MUSA" class="rounded-2xl shadow-2xl" />
+        </div>
+        <div>
+          <h2 class="text-4xl font-extrabold text-yellow-900 mb-6">Apes Buy. Apes Send It. 🍌🦍</h2>
+          <p class="text-gray-700 mb-4">$MUSA is the dumbest smart decision you’ll ever make. Born from the Latin word for banana, it’s the only coin that apes respect.</p>
+          <p class="text-gray-700 mb-4">Zero utility. Zero expectations. Infinite memes.</p>
+          <a href="https://t.me/musaCoinerc20" target="_blank" class="mt-4 inline-block bg-black hover:bg-gray-800 text-yellow-400 px-6 py-3 rounded-full font-bold transition">
+            Join the Jungle
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- HOW TO BUY SECTION -->
-    <section id="how-to-buy" class="py-20 bg-gradient-to-r from-yellow-900/50 to-amber-800/50">
+    <!-- HOW TO BUY -->
+    <section id="how-to-buy" class="py-24 bg-gradient-to-br from-yellow-800/80 to-amber-700/90 text-white">
       <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-300 mb-4">How to Buy $MUSA</h2>
-        <p class="text-lg text-gray-300 mb-12">It’s not hard. Even an ape can do it.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
-            <div class="text-yellow-400 text-2xl font-bold mb-2">1</div>
-            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Get a Wallet</h3>
-            <p class="text-gray-300 text-sm">Install MetaMask or your favorite Ethereum wallet.</p>
+        <h2 class="text-4xl font-extrabold text-yellow-300 mb-4">How to Buy $MUSA</h2>
+        <p class="text-lg text-gray-200 mb-10">It’s so simple, a banana could do it.</p>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-8">
+          <div class="bg-white/10 hover:scale-105 transition rounded-xl p-6">
+            <div class="text-3xl font-bold text-yellow-400 mb-2">1</div>
+            <h3 class="font-semibold text-lg mb-1">Install a Wallet</h3>
+            <p class="text-sm text-gray-300">Use MetaMask or any Ethereum wallet of choice.</p>
           </div>
-          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
-            <div class="text-yellow-400 text-2xl font-bold mb-2">2</div>
-            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Add ETH</h3>
-            <p class="text-gray-300 text-sm">Buy ETH and send it to your wallet. Bananas ain’t free.</p>
+          <div class="bg-white/10 hover:scale-105 transition rounded-xl p-6">
+            <div class="text-3xl font-bold text-yellow-400 mb-2">2</div>
+            <h3 class="font-semibold text-lg mb-1">Load ETH</h3>
+            <p class="text-sm text-gray-300">ETH fuels the jungle. Buy and send it to your wallet.</p>
           </div>
-          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
-            <div class="text-yellow-400 text-2xl font-bold mb-2">3</div>
-            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Connect to Uniswap</h3>
-            <p class="text-gray-300 text-sm">Go to Uniswap and paste the $MUSA contract address.</p>
+          <div class="bg-white/10 hover:scale-105 transition rounded-xl p-6">
+            <div class="text-3xl font-bold text-yellow-400 mb-2">3</div>
+            <h3 class="font-semibold text-lg mb-1">Go to Uniswap</h3>
+            <p class="text-sm text-gray-300">Paste the $MUSA contract address and swap.</p>
           </div>
-          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
-            <div class="text-yellow-400 text-2xl font-bold mb-2">4</div>
-            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Buy & Hold</h3>
-            <p class="text-gray-300 text-sm">Swap ETH for $MUSA. Then HODL like a banana hoarding ape.</p>
+          <div class="bg-white/10 hover:scale-105 transition rounded-xl p-6">
+            <div class="text-3xl font-bold text-yellow-400 mb-2">4</div>
+            <h3 class="font-semibold text-lg mb-1">HODL Like an Ape</h3>
+            <p class="text-sm text-gray-300">Hold. Meme. Repeat. That's evolution.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- MYSTERY SECTION -->
-    <section class="py-20 bg-black text-yellow-400 text-center px-6">
-      <h2 class="text-3xl font-bold mb-6">Who Made $MUSA?</h2>
-      <p class="mb-3">No one knows.</p>
-      <p class="mb-3">Some say a banana got tired of being eaten.</p>
-      <p class="mb-3">Some say it was coded in a tree.</p>
-      <p class="mb-6">Others say it’s just… destiny.</p>
-      <p class="text-white italic">Bananas are the oldest currency.<br>Now they’re on-chain.<br>$MUSA isn’t a project.<br>It’s evolution, memified.</p>
+    <section class="py-24 bg-black text-yellow-400 text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Who Made $MUSA?</h2>
+      <p class="mb-2">No one knows.</p>
+      <p class="mb-2">Rumor says a banana wrote smart contracts in the jungle.</p>
+      <p class="mb-2">Others say it was born of chaos and potassium.</p>
+      <p class="text-white italic mt-6">This isn’t finance.<br>This is banana evolution.<br>Welcome to the memepocalypse.</p>
     </section>
 
   </body>
