@@ -1,577 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- required meta -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- #favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-    <!-- #title -->
-    <title>$MUSA | Meme coin ICO & Crypto HTML5 Template</title>
-    <!-- #keywords -->
-    <meta
-      name="keywords"
-      content="crypto, crypto token, crypto trading, blockchain, html, bootstrap, scss"
-    />
-    <!-- #description -->
-    <meta name="description" content="Meme coin ICO & Crypto HTML5 Template" />
-    <!-- bootstrap five css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- font awesome six css -->
-    <link rel="stylesheet" href="assets/fonts/css/all.min.css" />
-    <!-- tabler icons css -->
-    <link rel="stylesheet" href="assets/fonts/css/tabler-icons.min.css" />
-    <!-- aos css -->
-    <link rel="stylesheet" href="assets/css/aos.css" />
-    <!-- nice select css -->
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <!-- odometer css -->
-    <link rel="stylesheet" href="assets/css/odometer.css" />
-    <!-- swiper slider css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- responsive css -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <!-- template settings css -->
-    <link rel="stylesheet" href="assets/css/template-settings.css" />
-    <!-- rtl version css -->
-    <link rel="stylesheet" href="assets/css/rtl-version.css" />
+    <meta name="description" content="$MUSA - The ultimate meme coin on Ethereum. Just bananas, memes, and apes vibin’ on-chain." />
+    <meta name="theme-color" content="#1e3a8a" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="$MUSA - Bananas Are Based" />
+    <meta property="og:description" content="Apes eat. Apes buy. Apes send it. $MUSA is the evolution of bananas on Ethereum." />
+    <meta property="og:image" content="/musa.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="$MUSA - Bananas Are Based" />
+    <meta property="twitter:description" content="No utility. No promises. Just memes, bananas, and evolution on-chain." />
+    <meta property="twitter:image" content="/musa.png" />
+
+    <link rel="icon" href="/musa.png" />
+    <link rel="apple-touch-icon" href="/musa.png" />
+    <title>$MUSA - Bananas On Ethereum</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <!--[if lt IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-    <div class="page-wrapper a-cursor page-three">
-      <!-- ==== preloader start ==== -->
-      <div class="preloader">
-        <svg
-          version="1.1"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="200px"
-          height="200px"
-          viewBox="100 100 400 400"
-          xml:space="preserve"
-        >
-          <filter id="dropshadow" height="130%">
-            <feGaussianBlur in="SourceAlpha" stdDeviation="5"></feGaussianBlur>
-            <feOffset dx="0" dy="0" result="offsetblur"></feOffset>
-            <feFlood flood-color="red"></feFlood>
-            <feComposite in2="offsetblur" operator="in"></feComposite>
-            <feMerge>
-              <feMergeNode></feMergeNode>
-              <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-          </filter>
-          <path
-            class="path"
-            style="filter: url(index-three.html#dropshadow)"
-            fill="#000000"
-            d="M446.089,261.45c6.135-41.001-25.084-63.033-67.769-77.735l13.844-55.532l-33.801-8.424l-13.48,54.068 c-8.896-2.217-18.015-4.304-27.091-6.371l13.568-54.429l-33.776-8.424l-13.861,55.521c-7.354-1.676-14.575-3.328-21.587-5.073 l0.034-0.171l-46.617-11.64l-8.993,36.102c0,0,25.08,5.746,24.549,6.105c13.689,3.42,16.159,12.478,15.75,19.658L208.93,357.23 c-1.675,4.158-5.925,10.401-15.494,8.031c0.338,0.485-24.579-6.134-24.579-6.134l-9.631,40.468l36.843,9.188 c8.178,2.051,16.209,4.19,24.098,6.217l-13.978,56.17l33.764,8.424l13.852-55.571c9.235,2.499,18.186,4.813,26.948,6.995 l-13.802,55.309l33.801,8.424l13.994-56.061c57.648,10.902,100.998,6.502,119.237-45.627c14.705-41.979-0.731-66.193-31.06-81.984 C425.008,305.984,441.655,291.455,446.089,261.45z M368.859,369.754c-10.455,41.983-81.128,19.285-104.052,13.589l18.562-74.404 C306.28,314.65,379.774,325.975,368.859,369.754z M379.302,260.846c-9.527,38.187-68.358,18.781-87.442,14.023l16.828-67.489 C327.767,212.14,389.234,221.02,379.302,260.846z"
-          ></path>
-        </svg>
-        <p>$MUSA</p>
+  <body class="bg-gradient-to-br from-yellow-900 via-yellow-800 to-amber-900 text-white overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-transparent py-4 px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <img src="/assets/images/logo.jpeg" alt="MUSA Logo" class="w-8 h-8 rounded-full object-cover" />
+          <span class="text-xl font-bold">$MUSA</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-300 hover:text-white relative group">
+            Home
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="#about" class="text-gray-300 hover:text-white relative group">
+            About
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="#how-to-buy" class="text-gray-300 hover:text-white relative group">
+            How To Buy
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a href="https://t.me/musaCoinerc20" target="_blank" class="bg-white/10 border border-white/20 px-6 py-2 rounded-full hover:bg-white/20 hover:border-yellow-400 text-white font-semibold transition-all duration-300">
+            Join Telegram
+          </a>
+        </div>
       </div>
-      <!-- ==== / preloader end ==== -->
-      <!-- ==== header start ==== -->
-      <header class="header header-tertiary">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="main-header__menu-box">
-                <nav class="navbar p-0">
-                  <div class="navbar-logo">
-                    <a href="#">
-                      <img src="assets/images/logo1.jpg" alt="Image" />
-                    </a>
-                  </div>
-                  <div class="navbar__menu-wrapper">
-                    <div class="navbar__menu d-none d-xl-block">
-                      <ul class="navbar__list">
-                        <li class="navbar__item navbar__item--has-children">
-                          <a
-                            href="#"
-                            aria-label="dropdown menu"
-                            class="navbar__dropdown-label dropdown-label-alter"
-                            >Home</a
-                          >
-                        </li>
-                        <li class="navbar__item">
-                          <a href="#work">How it works</a>
-                        </li>
-                        <li class="navbar__item">
-                          <a href="#countdown">Launch Date</a>
-                        </li>
+    </nav>
 
-                        <li class="navbar__item navbar__item--has-children">
-                          <a
-                            href="#"
-                            aria-label="dropdown menu"
-                            class="navbar__dropdown-label dropdown-label-alter"
-                            >News</a
-                          >
-                          <ul class="navbar__sub-menu">
-                            <li>
-                              <a href="news.html">News</a>
-                            </li>
-                            <li>
-                              <a href="news-details.html">News Details</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="navbar__item">
-                          <a href="contact-us.html">Contact Us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="navbar__options">
-                    <div class="navbar__mobile-options d-none d-sm-block">
-                      <div class="btn-wrapper">
-                        <a href="sign-in.html" class="btn--primary"
-                          >Get Started</a
-                        >
-                      </div>
-                    </div>
-                    <button
-                      class="open-offcanvas-nav d-flex d-xl-none"
-                      aria-label="toggle mobile menu"
-                      title="open offcanvas menu"
-                    >
-                      <span class="icon-bar top-bar"></span>
-                      <span class="icon-bar middle-bar"></span>
-                      <span class="icon-bar bottom-bar"></span>
-                    </button>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- ==== / header end ==== -->
-      <!-- ==== mobile menu start ==== -->
-      <div class="mobile-menu d-block d-xxl-none" data-lenis-prevent="">
-        <nav class="mobile-menu__wrapper">
-          <div class="mobile-menu__header">
-            <div class="logo">
-              <a href="#" aria-label="home page" title="logo">
-                <img src="assets/images/logo1.jpg" alt="Image" />
-              </a>
-            </div>
-            <button aria-label="close mobile menu" class="close-mobile-menu">
-              <i class="ph ph-x"></i>
-            </button>
-          </div>
-          <div class="mobile-menu__list"></div>
-          <div class="mobile-menu__cta d-block d-md-none">
-            <div class="btn-wrapper">
-              <a href="sign-in.html" class="btn--primary">Get Started</a>
-            </div>
-          </div>
-          <div class="mobile-menu__social social">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              aria-label="share us on facebook"
-              title="facebook"
-            >
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://vimeo.com/"
-              target="_blank"
-              aria-label="share us on vimeo"
-              title="vimeo"
-            >
-              <i class="fa-brands fa-vimeo-v"></i>
-            </a>
-            <a
-              href="https://x.com/"
-              target="_blank"
-              aria-label="share us on twitter"
-              title="twitter"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              aria-label="share us on linkedin"
-              title="linkedin"
-            >
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
-        </nav>
-      </div>
-      <div class="mobile-menu__backdrop"></div>
-      <!-- ==== / mobile menu end ==== -->
- 
-      <!-- ==== countdown section start ==== -->
-      <section class="countdown-main" id="countdown">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="countdown__inner">
-                <div class="row gutter-60 align-items-center">
-                  <div class="col-12 col-lg-6 col-xl-5">
-                    <div class="countdown__timer-wrapper">
-                      <div class="countdown__timer text-center">
-                        <span class="text-lg gorditas fw-7"
-                          >Crypto Market Starts in</span
-                        >
-                        <div class="time-countdown mb-25 mt-25">
-                          <div class="counter-column">
-                            <h4 class="count day">0</h4>
-                            <span>Days</span>
-                          </div>
-                          <span>:</span>
-                          <div class="counter-column">
-                            <h4 class="count hour">0</h4>
-                            <span>Hours</span>
-                          </div>
-                          <span>:</span>
-                          <div class="counter-column">
-                            <h4 class="count minute">0</h4>
-                            <span>Minutes</span>
-                          </div>
-                          <span>:</span>
-                          <div class="counter-column">
-                            <h4 class="count second">0</h4>
-                            <span>Seconds</span>
-                          </div>
-                        </div>
-                        <p class="text-xl fw-5">
-                          <span class="primary-text">$25,256,432</span>
-                          contribution received
-                        </p>
-                        <div class="progress-count-wrapper mt-40">
-                          <div class="count__progress progress-bar-single">
-                            <div class="count-progress__intro">
-                              <p><span>$5m</span></p>
-                              <p>$<span class="percent-value"></span></p>
-                            </div>
-                            <div class="count-progress__bar mt-16 mb-15">
-                              <div
-                                class="progress-bar-wrapper"
-                                data-percent="70%"
-                              >
-                                <div class="progress-bar">
-                                  <div class="progress-bar-percent"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="count-progress__goal">
-                              <p class="fw-5 text-lg">Softcap in 1069 days</p>
-                              <p class="fw-5 text-lg">Hardcap</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6 col-xl-6 offset-xl-1">
-                    <div
-                      class="countdown__content text-center text-lg-start"
-                      data-aos="fade-up"
-                      data-aos-duration="800"
-                    >
-                      <span
-                        class="text-xl gradient-text sub-title fw-6 neutral-top"
-                        >trades with x10 leverage</span
-                      >
-                      <h2 class="fw-7 mt-20 title-animation">ICO Starts in</h2>
-                      <p class="text-xl mt-20 mx-auto mx-lg-0">
-                        So we dropped $MUSA, the ultimate meme coin on Ethereum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom-img">
-                  <img src="assets/images/elements/eight.png" alt="Image" />
-                </div>
-                <div class="top-img">
-                  <img src="assets/images/elements/seven.png" alt="Image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ==== / countdown section end ==== -->
-
-      <!-- ==== work section start ==== -->
-      <section class="work pt-120" id="work">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div
-                class="section__header text-center mb-80"
-                data-aos="fade-up"
-                data-aos-duration="800"
-              >
-                <span class="text-xl gradient-text sub-title fw-6 neutral-top"
-                  >trades with x10 leverage</span
-                >
-                <h2 class="fw-7 mt-20 title-animation">How it works</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-6 col-xl-6">
-              <div class="work__thumb-wrapper d-none d-lg-block">
-                <div
-                  class="work__thumb"
-                  data-aos="fade-right"
-                  data-aos-duration="800"
-                >
-                  <img src="assets/images/logo.jpeg" alt="Image" />
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-              <div
-                class="work__content mt-0"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="100"
-              >
-                <span class="text-xl gradient-text sub-title fw-6 neutral-top"
-                  >trades with x10 leverage</span
-                >
-                <!-- <h4 class="fw-7 mt-20 title-animation">Sign up or register</h4> -->
-                <p class="text-xl mt-20">
-                  Latin name for banana? Musa. Now it’s the ticker for your next
-                  terrible financial decision that might 100x your portfolio. No
-                  utility No promises Just bananas, memes, and apes vibin’ on
-                  the chain.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-              <div
-                class="work__content"
-                data-aos="fade-up"
-                data-aos-duration="800"
-              >
-                <span class="text-xl gradient-text sub-title fw-6 neutral-top"
-                  >trades with x10 leverage</span
-                >
-                <!-- <h4 class="fw-7 mt-20 title-animation">Sign up or register</h4> -->
-                <p class="text-xl mt-20">
-                  <b>Who Made MUSA?</b>
-
-                  No one knows. Some say a banana got tired of being eaten. Some
-                  say it was coded in a tree. Others say it’s just… destiny.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-6">
-              <div
-                class="work__thumb text-center d-none d-lg-block"
-                data-aos="fade-left"
-                data-aos-duration="800"
-                data-aos-delay="100"
-              >
-                <img src="assets/images/work/two.png" alt="Image" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="left-top-img">
-          <img src="assets/images/faq/left-shape.png" alt="Image" />
-        </div>
-        <div class="left-bottom-img">
-          <img src="assets/images/faq/left-circle.png" alt="Image" />
-        </div>
-        <div class="right-top-img">
-          <img src="assets/images/faq/right-shape.png" alt="Image" />
-        </div>
-        <div class="right-bottom-img">
-          <img src="assets/images/faq/right-circle.png" alt="Image" />
-        </div>
-      </section>
-      <!-- ==== / work section end ==== -->
-
-      <!-- ==== invest section start ==== -->
-      <section class="invest pt-120">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-xl-5">
-              <div class="invest__thumnb-wrapper">
-                <div class="invest__thumb d-none d-xl-block">
-                  <div
-                    class="invest__thumb-one"
-                    data-aos="zoom-in"
-                    data-aos-duration="800"
-                  >
-                    <img src="assets/images/invest/one.png" alt="Image" />
-                  </div>
-                  <div
-                    class="invest__thumb-two"
-                    data-aos="zoom-in"
-                    data-aos-duration="800"
-                    data-aos-delay="100"
-                  >
-                    <img src="assets/images/invest/two.png" alt="Image" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-xl-7">
-              <div
-                class="invest__content"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="100"
-              >
-                <div class="section__header">
-                  <span class="text-xl gradient-text sub-title fw-6 neutral-top"
-                    >trades with x10 leverage</span
-                  >
-                  <h2 class="fw-6 mt-20 title-animation">
-                    Invest in our popular ICO and
-                    <span class="primary-text">become part</span> of the future
-                    of digital finance.
-                  </h2>
-                  <p class="oswald text-xl mt-25">
-                    Latin name for banana? Musa. Now it’s the ticker for your
-                    next terrible financial decision that might 100x your
-                    portfolio. No utility No promises Just bananas, memes, and
-                    apes vibin’ on the chain.
-                  </p>
-                </div>
-                <div class="invest__list mt-55">
-                  <ul>
-                    <li class="text-xxl">
-                      <a href="#">Bananas are the oldest currency.</a>
-                    </li>
-                    <li class="text-xxl"><a href="#">Now they’re on-chain.</a></li>
-                    <li class="text-xxl"><a href="#">MUSA is not a project.</a></li>
-                    <li class="text-xxl">
-                      <a href="#">It’s evolution memified.</a>
-                    </li>
-                   
-                  </ul>
-                </div>
-
-                 <div class="col-12 col-xl-5">
-                    <div
-                      class="social justify-content-center justify-content-xl-end"
-                    >
-                      <a
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        aria-label="share us on facebook"
-                        title="facebook"
-                      >
-                        <i class="fa-brands fa-facebook-f"></i>
-                      </a>
-                      <a
-                        href="https://vimeo.com/"
-                        target="_blank"
-                        aria-label="share us on vimeo"
-                        title="vimeo"
-                      >
-                        <i class="fa-brands fa-vimeo-v"></i>
-                      </a>
-                      <a
-                        href="https://x.com/"
-                        target="_blank"
-                        aria-label="share us on twitter"
-                        title="twitter"
-                      >
-                        <i class="fa-brands fa-twitter"></i>
-                      </a>
-                      <a
-                        href="https://t.me/musaCoinerc20"
-                        target="_blank"
-                        aria-label="share us on linkedin"
-                        title="telegram"
-                      >
-                        <i class="fa-brands fa-telegram"></i>
-                      </a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        
-      </section>
-      <!-- ==== / invest section end ==== -->
-      <!-- ==== advisor section start ==== -->
-
-
-      <!-- ==== custom cursor start ==== -->
-      <div class="mouseCursor cursor-outer"></div>
-      <div class="mouseCursor cursor-inner"></div>
-      <!-- ==== / custom cursor end ==== -->
-      <!-- ==== scroll to top start ==== -->
-      <button
-        class="progress-wrap"
-        aria-label="scroll indicator"
-        title="back to top"
-      >
-        <span></span>
-        <svg
-          class="progress-circle svg-content"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-screen flex items-center justify-center pt-20">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/assets/logo1.jpg');"></div>
+      <div class="absolute bottom-6 animate-bounce z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-400 w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M6 9l6 6 6-6" />
         </svg>
-      </button>
-      <!-- ==== / scroll to top end ==== -->
-    </div>
-    <!-- ==== js dependencies start ==== -->
-    <!-- jquery -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!-- bootstrap five js -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- nice select js -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- swiper slider js -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- viewport js -->
-    <script src="assets/js/viewport.jquery.js"></script>
-    <!-- odometer js -->
-    <script src="assets/js/odometer.min.js"></script>
-    <!-- vanilla tilt js -->
-    <script src="assets/js/vanilla-tilt.min.js"></script>
-    <!-- aos js -->
-    <script src="assets/js/aos.js"></script>
-    <!-- phospor icons js -->
-    <script src="assets/js/phosphor-icon.js"></script>
-    <!-- apex chart js -->
-    <script src="assets/js/apexcharts.min.js"></script>
-    <!-- splittext js -->
-    <script src="assets/js/SplitText.min.js"></script>
-    <!-- scrollto js -->
-    <script src="assets/js/ScrollToPlugin.min.js"></script>
-    <!-- scrolltrigger js -->
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!-- gsap js -->
-    <script src="assets/js/gsap.min.js"></script>
-    <!-- ==== / js dependencies end ==== -->
-    <!-- main js -->
-    <script src="assets/js/custom.js"></script>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white text-gray-900 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-yellow-900 mb-6">Apes Eat, Apes Buy, Apes Send It 🍌🦍</h2>
+            <p class="text-gray-700 mb-4">Bananas = based.<br/>Apes = hungry.<br/>So we dropped $MUSA, the ultimate meme coin on Ethereum.</p>
+            <p class="text-gray-700 mb-4">Latin name for banana? Musa. Now it’s the ticker for your next terrible financial decision that might 100x your portfolio.</p>
+            <p class="text-gray-700 mb-4">No utility. No promises. Just bananas, memes, and apes vibin’ on the chain.</p>
+            <a href="https://t.me/musaCoinerc20" target="_blank" class="inline-block bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white px-8 py-3 rounded-full font-bold transition-transform transform hover:scale-105">
+              Join Telegram
+            </a>
+          </div>
+          <div>
+            <div class="rounded-3xl overflow-hidden shadow-xl">
+              <img src="/assets/images/logo.jpeg" alt="MUSA Meme Coin" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY SECTION -->
+    <section id="how-to-buy" class="py-20 bg-gradient-to-r from-yellow-900/50 to-amber-800/50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-300 mb-4">How to Buy $MUSA</h2>
+        <p class="text-lg text-gray-300 mb-12">It’s not hard. Even an ape can do it.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
+            <div class="text-yellow-400 text-2xl font-bold mb-2">1</div>
+            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Get a Wallet</h3>
+            <p class="text-gray-300 text-sm">Install MetaMask or your favorite Ethereum wallet.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
+            <div class="text-yellow-400 text-2xl font-bold mb-2">2</div>
+            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Add ETH</h3>
+            <p class="text-gray-300 text-sm">Buy ETH and send it to your wallet. Bananas ain’t free.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
+            <div class="text-yellow-400 text-2xl font-bold mb-2">3</div>
+            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Connect to Uniswap</h3>
+            <p class="text-gray-300 text-sm">Go to Uniswap and paste the $MUSA contract address.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition">
+            <div class="text-yellow-400 text-2xl font-bold mb-2">4</div>
+            <h3 class="text-yellow-400 font-semibold text-lg mb-1">Buy & Hold</h3>
+            <p class="text-gray-300 text-sm">Swap ETH for $MUSA. Then HODL like a banana hoarding ape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MYSTERY SECTION -->
+    <section class="py-20 bg-black text-yellow-400 text-center px-6">
+      <h2 class="text-3xl font-bold mb-6">Who Made $MUSA?</h2>
+      <p class="mb-3">No one knows.</p>
+      <p class="mb-3">Some say a banana got tired of being eaten.</p>
+      <p class="mb-3">Some say it was coded in a tree.</p>
+      <p class="mb-6">Others say it’s just… destiny.</p>
+      <p class="text-white italic">Bananas are the oldest currency.<br>Now they’re on-chain.<br>$MUSA isn’t a project.<br>It’s evolution, memified.</p>
+    </section>
+
   </body>
 </html>
