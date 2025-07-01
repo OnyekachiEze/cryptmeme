@@ -956,48 +956,47 @@
         },
       });
     }
+/**
+ * ======================================
+ * 17. countdown
+ * ======================================
+ */
+if ($(".time-countdown").length > 0) {
+  const countdownElement = document.querySelector(".time-countdown");
+  const dayElement = countdownElement.querySelector(".day");
+  const hourElement = countdownElement.querySelector(".hour");
+  const minuteElement = countdownElement.querySelector(".minute");
+  const secondElement = countdownElement.querySelector(".second");
 
-    /**
-     * ======================================
-     * 17. countdown
-     * ======================================
-     */
-    if ($(".time-countdown").length > 0) {
-      const countdownElement = document.querySelector(".time-countdown");
-      const dayElement = countdownElement.querySelector(".day");
-      const hourElement = countdownElement.querySelector(".hour");
-      const minuteElement = countdownElement.querySelector(".minute");
-      const secondElement = countdownElement.querySelector(".second");
+  const endDate = new Date();
+  endDate.setHours(endDate.getHours() + 7); // Set countdown for 7 hours
 
-      const endDate = new Date();
-      endDate.setDate(endDate.getDate() + 1);
+  function updateCountdown() {
+    const now = new Date();
+    const timeRemaining = endDate - now;
 
-      function updateCountdown() {
-        const now = new Date();
-        const timeRemaining = endDate - now;
-
-        if (timeRemaining <= 0) {
-          endDate.setDate(endDate.getDate() + 1);
-        }
-
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        dayElement.textContent = days;
-        hourElement.textContent = hours < 10 ? `0${hours}` : hours;
-        minuteElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
-        secondElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
-      }
-
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
+    if (timeRemaining <= 0) {
+      endDate.setHours(endDate.getHours() + 7); // Reset every 7 hours
     }
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+      (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    dayElement.textContent = days;
+    hourElement.textContent = hours < 10 ? `0${hours}` : hours;
+    minuteElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+    secondElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+}
 
     /**
      * ======================================
